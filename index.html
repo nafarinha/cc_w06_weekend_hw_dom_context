@@ -3,27 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>List of Scuderia Ferrari F1 drivers</title>
-    <script type="text/javascript"src="js/app.js"></script>
+    <script src="js/app.js"></script>
   </head>
   <body>
-    <form id="new-form-item">
+    <form id="new-item-form">
       <div id="form-wrapper">
-        <div id="form-item">
+        <div class="form-item">
           <label for="name">Name:</label>
           <input type="text" id="name" required/>
         </div>
 
-        <div id="form-item">
+        <div class="form-item">
           <label for="nationality">Nationality:</label>
           <input type="text" id="nationality" required/>
         </div>
 
-        <div id="form-item">
+        <div class="form-item">
           <label for="championships">World Drivers' championships:</label>
           <input type="number" min="0" id="championships" required/>
         </div>
       </div>
       <input type="submit" value="Save Driver"/>
     </form>
+
+    <h1>Ferrari F1 Drivers List</h1>
+    <div id="driver-list"></div>
   </body>
 </html>
