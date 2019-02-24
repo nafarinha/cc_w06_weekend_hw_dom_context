@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const newItemform = document.querySelector('#new-item-form');
   newItemform.addEventListener('submit', handleNewItemFormSubmit);
 
+  const deleteAllDriversButton = document.querySelector("#delete-all-drivers");
+  deleteAllDriversButton.addEventListener('click', handleDeleteAllClick);
 })
 
 const handleNewItemFormSubmit = function (event) {
@@ -31,4 +33,9 @@ const createDriverListItem = function (form) {
   driverListItem.appendChild(championships);
 
   return driverListItem;
+}
+
+const handleDeleteAllClick = function (event) {
+  const driverList = document.querySelector("#driver-list");
+  driverList.innerHTML ='';
 }
